@@ -1,6 +1,6 @@
 const SignInForm = () => {
   return (
-    <form className="h-[317px] w-[385px] space-y-4 rounded-[20px] bg-[#FFFFFF] p-[30px]">
+    <form className="h-[317px] space-y-4 rounded-[20px] bg-[#FFFFFF] p-[30px]">
       <div className="flex flex-col gap-1">
         <label htmlFor="email">Email address</label>
         <input
