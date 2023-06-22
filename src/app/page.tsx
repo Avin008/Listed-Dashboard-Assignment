@@ -1,4 +1,9 @@
-import { Brand, CreateAccountLink, SignInForm } from "@/components";
+import {
+  Brand,
+  CreateAccountLink,
+  SignInForm,
+  SignInWithServices,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +12,7 @@ export default function Home() {
         <Brand />
       </div>
       <div className="col-span-5 flex flex-col items-center justify-center border border-black">
+        <SignInWithServices />
         <SignInForm />
         <CreateAccountLink />
       </div>
