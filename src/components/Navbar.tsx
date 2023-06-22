@@ -7,7 +7,7 @@ const Navbar = () => {
       <span>
         <h1 className="font-sans text-[24px] font-bold">Dashboard</h1>
       </span>
-      <ul className="flex items-center gap-8 pr-6">
+      <ul className="flex items-center gap-8">
         <li>
           <Searchbar />
         </li>

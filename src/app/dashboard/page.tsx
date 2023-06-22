@@ -14,9 +14,9 @@ const data = [
 
 const DashboardPage = () => {
   return (
-    <div className="mt-[60px]">
+    <div className="mx-auto mt-[60px] w-[95%] space-y-5">
       <Navbar />
-      <div className="mt-[40px] grid grid-cols-4">
+      <div className="mt-[40px] grid grid-cols-4 gap-6">
         {data.map((x) => (
           <Card data={x} />
         ))}

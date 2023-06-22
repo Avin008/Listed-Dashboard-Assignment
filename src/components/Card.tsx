@@ -7,7 +7,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`h-[120px] w-[221px] rounded-md ${
+      className={`h-[120px] w-[221px] rounded-2xl ${
         data.id === 1 && "bg-[#DDEFE0]"
       } ${data.id === 2 && "bg-[#F4ECDD]"}
       ${data.id === 3 && "bg-[#EFDADA]"}
