@@ -7,11 +7,7 @@ const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
         <Sidebar />
         <ContactMenu />
       </div>
-      <div className="col-span-8">
-        <div className="mt-[60px]">
-          <Navbar />
-        </div>
-      </div>
+      <div className="col-span-8">{children}</div>
     </main>
   );
 };

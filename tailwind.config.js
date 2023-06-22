@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['var(--font-montserrat)'],
-        'mono': ['var(--font-lato)']
+        'mono': ['var(--font-lato)'],
       },
       colors: {
         background: "#F5F5F5",

@@ -1,4 +1,5 @@
 import Brand from "./Brand";
+import Card from "./Card";
 import ContactMenu from "./ContactOptions";
 import CreateAccountLink from "./CreateAccountLink";
 import FormHeading from "./FormHeading";
@@ -20,4 +21,5 @@ export {
   ContactMenu,
   Navbar,
   Searchbar,
+  Card,
 };
