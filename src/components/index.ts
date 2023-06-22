@@ -1,4 +1,5 @@
 import Brand from "./Brand";
+import ContactMenu from "./ContactOptions";
 import CreateAccountLink from "./CreateAccountLink";
 import FormHeading from "./FormHeading";
 import Sidebar from "./Sidebar";
@@ -14,4 +15,5 @@ export {
   SignInWithServices,
   FormHeading,
   Sidebar,
+  ContactMenu,
 };
