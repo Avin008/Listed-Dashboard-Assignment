@@ -1,4 +1,4 @@
-import { Brand, SignInForm } from "@/components";
+import { Brand, CreateAccountLink, SignInForm } from "@/components";
 
 export default function Home() {
   return (
@@ -6,8 +6,9 @@ export default function Home() {
       <div className="col-span-3 flex items-center justify-center border border-black bg-[#000000]">
         <Brand />
       </div>
-      <div className="col-span-5 flex items-center justify-center border border-black">
+      <div className="col-span-5 flex flex-col items-center justify-center border border-black">
         <SignInForm />
+        <CreateAccountLink />
       </div>
     </main>
   );
