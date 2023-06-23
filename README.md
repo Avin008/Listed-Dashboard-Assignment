@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<body>
+  <h1>BOARD - FRONTEND INTERN ASSIGNMENT</h1>
+  
+  <h2>Demo</h2>
+  
+https://user-images.githubusercontent.com/32406268/232518539-afa02cd8-5c2d-4eab-a9ef-057d259a842c.mp4
 
-## Getting Started
+  <h2>Features</h2>
+  <ul>
+    <li>Google Sign In</li>
+    <li>Sign Out</li>
+    <li>Responsive</li>
+   
+  </ul>
 
-First, run the development server:
+  <h2>Technologies Used</h2>
+  <ul>
+    <li><strong>Backend:</strong> Node.js, TypeScript, Express.js, MongoDB</li>
+    <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind, Zustand, and React Query</li>
+    <li><strong>Deployment:</strong> Vercel</li>
+  </ul>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  <h2>Installation</h2>
+  <ol>
+    <li>Clone the repository: <code>git clone https://github.com/Avin008/social-media-app.git</code></li>
+    <li>Install dependencies: <code>npm install</code></li>
+    <li>Create a new file named <code>.env.local</code> in the root directory of the project</li>
+    <li>Add the following environment variables to the <code>.env.local</code> file:
+      <ul>
+        <li><code>NEXT_PUBLIC_URL=https://expressjs-mongoose-production-fb7d.up.railway.app</code> - URL OF THE BACKEND SERVER</li>
+      </ul>
+    </li>
+    <li>Start the server: <code>npm run dev</code></li>
+    <li>Navigate to <a href="http://localhost:3000">http://localhost:3000</a> in your browser</li>
+  </ol>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <h2>Usage</h2>
+  <ul>
+    <li>Sign up for a new account or log in to an existing account</li>
+    <li>Follow users to see their posts in your feeds</li>
+    <li>Create a post and share it with other users</li>
+    <li>Like and comment on posts from other users</li>
+    <li>Search for other users</li>
+    <li>Edit your profile details</li>
+    <li>navigate to explore page to see other users posts</li>
+  </ul>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  <h2>Contributing</h2>
+  <p>Contributions to this project are welcome! If you find any bugs or have any feature requests, please open an issue or submit a pull request.</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <h2>Credits</h2>
+  <p>This project was created by <a href="https://github.com/Avin008">Avinash Mahananda</a>.</p>
