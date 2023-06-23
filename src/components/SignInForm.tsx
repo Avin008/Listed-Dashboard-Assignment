@@ -1,6 +1,11 @@
+"use client";
+
 const SignInForm = () => {
   return (
-    <form className="h-[317px] space-y-4 rounded-[20px] bg-[#FFFFFF] p-[30px] font-mono">
+    <form
+      className="h-[317px] space-y-4 rounded-[20px] bg-[#FFFFFF] p-[30px] font-mono"
+      onSubmit={(e: React.FormEvent) => e.preventDefault()}
+    >
       <div className="flex flex-col gap-1">
         <label htmlFor="email">Email address</label>
         <input
