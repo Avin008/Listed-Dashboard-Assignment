@@ -2,6 +2,7 @@
 import { ContactMenu, Navbar, Sidebar } from "@/components";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { ClipLoader } from "react-spinners";
 
 const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
   const router = useRouter();
@@ -16,8 +17,7 @@ const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
   if (!session?.user) {
     return (
       <div className="flex h-screen flex-col items-center justify-center">
-        <h1 className="text-xl">Please Sign In to continue</h1>
-        <p>Redirecting...</p>
+        <ClipLoader />
       </div>
     );
   }
