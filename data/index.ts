@@ -11,10 +11,10 @@ export const cardData = [
 ];
 
 export const lineGraphData = [
-  { id: 1, year: "Week 1", userGained: 150, userLost: 200 },
-  { id: 2, year: "Week 2", userGained: 400, userLost: 200 },
-  { id: 3, year: "Week 3", userGained: 300, userLost: 500 },
-  { id: 4, year: "Week 4", userGained: 500, userLost: 100 },
+  { id: 1, year: "Week 1", userGained: 100, userLost: 200 },
+  { id: 2, year: "Week 2", userGained: 400, userLost: 320 },
+  { id: 3, year: "Week 3", userGained: 250, userLost: 460 },
+  { id: 4, year: "Week 4", userGained: 420, userLost: 480 },
 ];
 
 export const scheduleData = [
