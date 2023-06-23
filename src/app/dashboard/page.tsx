@@ -22,7 +22,7 @@ const dummyData = [
 
 const DashboardPage = () => {
   return (
-    <div className="mx-auto mt-[60px] w-[95%] space-y-5">
+    <div className="mx-auto mt-[35px] w-[95%] space-y-5">
       <Navbar />
       <div className="mt-[40px] grid grid-cols-4 gap-6">
         {data.map((x) => (
