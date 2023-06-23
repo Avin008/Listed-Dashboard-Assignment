@@ -14,6 +14,7 @@ const ScheduleCard = ({
       <div className="flex flex-col gap-5">
         {data.map((x) => (
           <div
+            key={x.id}
             className={`border-l-4 ${
               x.id === 1 ? "border-[#9BDD7C]" : "border-[#6972C3]"
             }  px-3`}
