@@ -12,7 +12,22 @@ export const cardData = [
 
 export const lineGraphData = [
   { id: 1, year: "Week 1", userGained: 150, userLost: 200 },
-  { id: 2, year: "Week 2", userGained: 400, userLost: 300 },
-  { id: 3, year: "Week 3", userGained: 300, userLost: 350 },
-  { id: 4, year: "Week 4", userGained: 500, userLost: 450 },
+  { id: 2, year: "Week 2", userGained: 400, userLost: 200 },
+  { id: 3, year: "Week 3", userGained: 300, userLost: 500 },
+  { id: 4, year: "Week 4", userGained: 500, userLost: 100 },
+];
+
+export const scheduleData = [
+  {
+    id: 1,
+    title: "Meeting with suppliers from Kuta Bali",
+    time: "14.00-15.00",
+    place: "at Sunset Road, Kuta, Bali ",
+  },
+  {
+    id: 2,
+    title: "Check operation at Giga Factory 1",
+    time: "18.00-20.00",
+    place: "at Central Jakarta",
+  },
 ];
