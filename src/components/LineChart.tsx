@@ -13,10 +13,16 @@ const LineChart = ({ data }: { data: any }) => {
       {
         label: "Guest",
         data: data.map((x: any) => x.userGained),
+        backgroundColor: "#9BDD7C",
+        borderColor: "#9BDD7C",
+        tension: 0.5,
       },
       {
         label: "User",
-        data: data.map((x: any) => x.userGained),
+        data: data.map((x: any) => x.userLost),
+        backgroundColor: "#E9A0A0",
+        borderColor: "#E9A0A0",
+        tension: 0.5,
       },
     ],
   });
@@ -24,6 +30,18 @@ const LineChart = ({ data }: { data: any }) => {
   const options: any = {
     maintainAspectRatio: true,
     aspectRatio: 3,
+    scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+    },
+    elements: {
+      point: {
+        radius: 0,
+      },
+    },
     plugins: {
       legend: {
         align: "end",

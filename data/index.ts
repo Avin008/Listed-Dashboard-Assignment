@@ -11,8 +11,8 @@ export const cardData = [
 ];
 
 export const lineGraphData = [
-  { id: 1, year: "Week 1", userGained: 100 },
-  { id: 2, year: "Week 2", userGained: 200 },
-  { id: 3, year: "Week 3", userGained: 50 },
-  { id: 4, year: "Week 4", userGained: 500 },
+  { id: 1, year: "Week 1", userGained: 150, userLost: 200 },
+  { id: 2, year: "Week 2", userGained: 400, userLost: 300 },
+  { id: 3, year: "Week 3", userGained: 300, userLost: 350 },
+  { id: 4, year: "Week 4", userGained: 500, userLost: 450 },
 ];
