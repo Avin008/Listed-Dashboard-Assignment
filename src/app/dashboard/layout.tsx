@@ -1,9 +1,17 @@
 "use client";
 import { ContactMenu, Navbar, Sidebar } from "@/components";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
-  const { data: session } = useSession({ required: true });
+  const router = useRouter();
+
+  const { data: session } = useSession({
+    required: true,
+    onUnauthenticated: () => {
+      router.push("/");
+    },
+  });
 
   if (!session?.user) {
     return (
