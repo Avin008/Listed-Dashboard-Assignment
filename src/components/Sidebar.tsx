@@ -1,4 +1,5 @@
 "use client";
+import { MdLogout } from "react-icons/md";
 
 import Image from "next/image";
 import { signOut } from "next-auth/react";
@@ -9,7 +10,7 @@ const Sidebar = () => {
         Board.
       </h1>
       <ul className="flex flex-col gap-6 font-sans text-white">
-        <li className="flex gap-3 font-bold">
+        <li className="flex items-center gap-3 font-bold">
           <Image
             className="object-contain"
             src="/dashboard.png"
@@ -19,7 +20,7 @@ const Sidebar = () => {
           />{" "}
           Dashboard
         </li>
-        <li className="flex gap-3">
+        <li className="flex items-center gap-3">
           <Image
             className="object-contain"
             src="/transaction.png"
@@ -29,7 +30,7 @@ const Sidebar = () => {
           />{" "}
           Transactions
         </li>
-        <li className="flex gap-3">
+        <li className="flex items-center gap-3">
           <Image
             className="object-contain"
             src="/schedule.png"
@@ -39,7 +40,7 @@ const Sidebar = () => {
           />{" "}
           Schedules
         </li>
-        <li className="flex gap-3">
+        <li className="flex items-center gap-3">
           <Image
             className="object-contain"
             src="/user.png"
@@ -49,7 +50,7 @@ const Sidebar = () => {
           />{" "}
           Users
         </li>
-        <li className="flex gap-3">
+        <li className="flex items-center gap-3">
           <Image
             className="object-contain"
             src="/setting.png"
@@ -61,15 +62,9 @@ const Sidebar = () => {
         </li>
         <li
           onClick={() => signOut()}
-          className="flex gap-3 font-bold text-red-500 hover:cursor-pointer hover:text-red-700 active:text-red-800"
+          className="flex items-center gap-3 font-semibold text-red-500 hover:cursor-pointer hover:text-red-700 active:text-red-800"
         >
-          <Image
-            className="object-contain"
-            src="/user.png"
-            alt=""
-            height={15}
-            width={15}
-          />{" "}
+          <MdLogout size={18} />
           Sign Out
         </li>
       </ul>
