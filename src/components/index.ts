@@ -1,3 +1,4 @@
+import AuthProvider from "./AuthProvider";
 import Brand from "./Brand";
 import Card from "./Card";
 import ContactMenu from "./ContactOptions";
@@ -32,4 +33,5 @@ export {
   LineChartCard,
   PieChart,
   ScheduleCard,
+  AuthProvider,
 };

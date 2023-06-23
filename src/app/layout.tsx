@@ -1,3 +1,4 @@
+import { AuthProvider } from "@/components";
 import "./globals.css";
 import { Inter, Lato, Montserrat, Open_Sans } from "next/font/google";
 
@@ -28,15 +29,17 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  session,
 }: {
   children: React.ReactNode;
+  session: any;
 }) {
   return (
     <html lang="en">
       <body
         className={`${lato.variable} ${montserrat.variable} ${open.variable}`}
       >
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
