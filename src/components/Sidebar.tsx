@@ -70,7 +70,7 @@ const Sidebar = () => {
             height={15}
             width={15}
           />{" "}
-          Logout
+          Sign Out
         </li>
       </ul>
     </aside>
