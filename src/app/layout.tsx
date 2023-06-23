@@ -16,10 +16,10 @@ const lato = Lato({
   variable: "--font-lato",
 });
 
-const open = Open_Sans({
+const open_sans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-open",
+  variable: "--font-open_sans",
 });
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${montserrat.variable} ${open.variable}`}
+        className={`${lato.variable} ${montserrat.variable} ${open_sans.variable}`}
       >
         <AuthProvider>{children}</AuthProvider>
       </body>

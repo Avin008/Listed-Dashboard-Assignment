@@ -7,7 +7,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`h-[120px] w-[221px] rounded-2xl ${
+      className={`h-[120px] w-[221px] space-y-1 rounded-2xl ${
         data.id === 1 && "bg-[#DDEFE0]"
       } ${data.id === 2 && "bg-[#F4ECDD]"}
       ${data.id === 3 && "bg-[#EFDADA]"}
@@ -23,8 +23,10 @@ const Card = ({
           height={20}
         />
       </div>
-      <p className="font-mono text-[14px]">{data.title}</p>
-      <h4 className="font-mono text-[24px] font-bold">{data.data}</h4>
+      <div className="p-2">
+        <p className="font-mono text-[14px]">{data.title}</p>
+        <h4 className="font-serif text-[24px] font-bold">{data.data}</h4>
+      </div>
     </div>
   );
 };
