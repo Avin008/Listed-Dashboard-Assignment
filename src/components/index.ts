@@ -6,6 +6,8 @@ import FormHeading from "./FormHeading";
 import LineChart from "./LineChart";
 import LineChartCard from "./LineChartCard";
 import Navbar from "./Navbar";
+import PieChart from "./PieChart";
+import PieChartCard from "./PieChartCard";
 import Searchbar from "./Searchbar";
 import Sidebar from "./Sidebar";
 import SignInForm from "./SignInForm";
@@ -21,9 +23,11 @@ export {
   FormHeading,
   Sidebar,
   ContactMenu,
+  PieChartCard,
   Navbar,
   Searchbar,
   Card,
   LineChart,
   LineChartCard,
+  PieChart,
 };

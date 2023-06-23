@@ -12,7 +12,9 @@ const LineChartCard = ({ data }: { data: any }) => {
           <option value="">May - June 2021</option>
         </select>
       </div>
-      <LineChart data={data} />
+      <div>
+        <LineChart data={data} />
+      </div>
     </div>
   );
 };
