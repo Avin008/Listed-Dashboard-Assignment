@@ -25,12 +25,12 @@ const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
   return (
     <main className="grid min-h-screen grid-cols-10 bg-[#F5F5F5] p-4">
       <div className="relative col-span-2">
-        <div className="sticky top-5 h-[33rem] rounded-3xl bg-black">
+        <div className="sticky top-5 h-[33rem] rounded-3xl bg-black x_sm:hidden xl:block">
           <Sidebar />
           <ContactMenu />
         </div>
       </div>
-      <div className="col-span-8">{children}</div>
+      <div className="x_sm:col-span-10 xl:col-span-8">{children}</div>
     </main>
   );
 };

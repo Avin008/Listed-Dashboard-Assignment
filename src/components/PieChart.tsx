@@ -26,6 +26,7 @@ const PieChart = ({ data }: { data: any }) => {
         plugins: {
           legend: { align: "center", position: "right" },
         },
+        responsive: true,
       }}
     />
   );
