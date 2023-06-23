@@ -2,15 +2,6 @@
   <h1>BOARD - FRONTEND INTERN ASSIGNMENT</h1>
   
   <h2>Demo</h2>
-  
-https://user-images.githubusercontent.com/32406268/232518539-afa02cd8-5c2d-4eab-a9ef-057d259a842c.mp4
-
-  <h2>Features</h2>
-  <ul>
-    <li>Google Sign In</li>
-    <li>Sign Out</li>
-    <li>Responsive</li>
-  </ul>
 
   <h2>Technologies Used</h2>
   <ul>
