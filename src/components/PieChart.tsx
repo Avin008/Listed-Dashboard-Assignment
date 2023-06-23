@@ -8,11 +8,13 @@ ChartJS.register(CategoryScale);
 
 const PieChart = ({ data }: { data: any }) => {
   const [chartData, setChartData] = useState({
-    labels: data.map((data: any) => data.year),
+    labels: ["Basic Tees", "Custom Short Pants", "Super Hoodies"],
     datasets: [
       {
         label: "Guest",
-        data: data.map((x: any) => x.userGained),
+        data: [10, 30, 60],
+        backgroundColor: ["#EE8484", "#F6DC7D", "#98D89E"],
+        borderWidth: 0,
       },
     ],
   });
@@ -24,7 +26,17 @@ const PieChart = ({ data }: { data: any }) => {
         radius: 80,
         aspectRatio: 2,
         plugins: {
-          legend: { align: "center", position: "right" },
+          legend: {
+            align: "center",
+            position: "right",
+            labels: {
+              pointStyle: "circle",
+              usePointStyle: true,
+              padding: 30,
+              font: { weight: "800" },
+              color: "#000000",
+            },
+          },
         },
         responsive: true,
       }}
