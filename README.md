@@ -2,14 +2,6 @@
   <h1>BOARD - FRONTEND INTERN ASSIGNMENT</h1>
   
   <h2>Demo</h2>
-  
-
-  <h2>Features</h2>
-  <ul>
-    <li>Google Sign In</li>
-    <li>Sign Out</li>
-    <li>Responsive</li>
-  </ul>
 
   <h2>Technologies Used</h2>
   <ul>
