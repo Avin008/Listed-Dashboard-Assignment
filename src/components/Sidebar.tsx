@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { signOut } from "next-auth/react";
 const Sidebar = () => {
   return (
     <aside className="flex flex-col justify-between space-y-5 px-[50px]">
@@ -56,6 +58,19 @@ const Sidebar = () => {
             width={15}
           />{" "}
           Settings
+        </li>
+        <li
+          onClick={() => signOut()}
+          className="flex gap-3 font-bold text-red-500 hover:cursor-pointer hover:text-red-700 active:text-red-800"
+        >
+          <Image
+            className="object-contain"
+            src="/user.png"
+            alt=""
+            height={15}
+            width={15}
+          />{" "}
+          Logout
         </li>
       </ul>
     </aside>
