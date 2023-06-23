@@ -1,8 +1,34 @@
+"use client";
+
+import {
+  Brand,
+  CreateAccountLink,
+  FormHeading,
+  SignInForm,
+  SignInWithServices,
+} from "@/components";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    document.title = "Boards | Sign In";
+  }, []);
+
   return (
-    <main className="flex h-screen flex-col items-center justify-center">
-      <h1 className="text-2xl">Hello World</h1>
-      <p>This is where the magic happens!</p>
-    </main>
+    <>
+      <main className="grid h-screen grid-cols-8 bg-background x_sm:p-5 md:p-0">
+        <div className="items-center justify-center border border-black bg-[#000000] x_sm:hidden md:col-span-3 md:flex">
+          <Brand />
+        </div>
+        <div className="flex items-center justify-center x_sm:col-span-8 md:col-span-5">
+          <div className="w-[385px] space-y-4">
+            <FormHeading />
+            <SignInWithServices />
+            <SignInForm />
+            <CreateAccountLink />
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
