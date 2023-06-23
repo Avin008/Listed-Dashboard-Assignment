@@ -9,7 +9,7 @@ https://github.com/Avin008/Listed-Dashboard-Assignment/assets/32406268/ab40c349-
   
   <h2>Technologies Used</h2>
   <ul>
-    <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind, and Chart.js</li>
+    <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind,Next-Auth, and Chart.js</li>
     <li><strong>Deployment:</strong> Vercel</li>
   </ul>
 
