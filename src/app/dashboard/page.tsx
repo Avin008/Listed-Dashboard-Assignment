@@ -13,11 +13,10 @@ const data = [
 ];
 
 const dummyData = [
-  { id: 1, year: 2018, userGained: 100, userLost: 50 },
-  { id: 2, year: 2019, userGained: 150, userLost: 75 },
-  { id: 3, year: 2020, userGained: 200, userLost: 100 },
-  { id: 4, year: 2021, userGained: 250, userLost: 125 },
-  { id: 5, year: 2022, userGained: 300, userLost: 150 },
+  { id: 1, year: "Week 1", userGained: 100 },
+  { id: 2, year: "Week 2", userGained: 200 },
+  { id: 3, year: "Week 3", userGained: 50 },
+  { id: 4, year: "Week 4", userGained: 500 },
 ];
 
 const DashboardPage = () => {
@@ -29,7 +28,16 @@ const DashboardPage = () => {
           <Card data={x} />
         ))}
       </div>
-      <div className="h-[359px] rounded-2xl bg-white p-2">
+      <div className="h-fit rounded-2xl bg-white px-[40px] py-[30px]">
+        <div className="">
+          <h2 className="font-sans text-[18px] font-bold">Activities</h2>
+          <select
+            className="font-sans text-[14px] text-[#858585]"
+            name="data-selector"
+          >
+            <option value="">May - June 2021</option>
+          </select>
+        </div>
         <LineChart data={dummyData} />
       </div>
     </div>

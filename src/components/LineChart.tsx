@@ -16,31 +16,29 @@ const LineChart = ({ data }: { data: any }) => {
       },
       {
         label: "User",
-        data: data.map((x: any) => x.userLost),
+        data: data.map((x: any) => x.userGained),
       },
     ],
   });
 
-  return (
-    <Line
-      data={chartData}
-      options={{
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            align: "end",
-            position: "top",
-            labels: {
-              usePointStyle: true,
-              pointStyle: "circle",
-              boxHeight: 8,
-              padding: 30,
-            },
-          },
+  const options: any = {
+    maintainAspectRatio: true,
+    aspectRatio: 3,
+    plugins: {
+      legend: {
+        align: "end",
+        position: "top",
+        labels: {
+          usePointStyle: true,
+          pointStyle: "circle",
+          boxHeight: 8,
+          padding: 15,
         },
-      }}
-    />
-  );
+      },
+    },
+  };
+
+  return <Line data={chartData} options={options} />;
 };
 
 export default LineChart;
