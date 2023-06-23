@@ -15,7 +15,7 @@ https://github.com/Avin008/Listed-Dashboard-Assignment/assets/32406268/ab40c349-
 
   <h2>Installation</h2>
   <ol>
-    <li>Clone the repository: <code>git clone https://github.com/Avin008/social-media-app.git</code></li>
+    <li>Clone the repository: <code>git clone https://github.com/Avin008/Listed-Dashboard-Assignment</code></li>
     <li>Install dependencies: <code>npm install</code></li>
     <li>Create a new file named <code>.env.local</code> in the root directory of the project</li>
     <li>Add the following environment variables to the <code>.env.local</code> file:
