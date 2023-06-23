@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Searchbar from "./Searchbar";
+import { useSession } from "next-auth/react";
 
 const Navbar = () => {
+  const { data: session } = useSession();
+
   return (
     <nav className="flex items-center justify-between">
       <span>
@@ -17,7 +22,7 @@ const Navbar = () => {
         <li>
           <Image
             className="rounded-full"
-            src="/profile.png"
+            src={session?.user?.image ? session.user.image : "/profile.png"}
             alt=""
             width={35}
             height={35}

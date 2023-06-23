@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { signIn } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 
 const SignInWithServicesButton = ({
   icon,
