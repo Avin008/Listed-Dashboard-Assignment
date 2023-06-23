@@ -33,7 +33,7 @@ const PieChart = ({ data }: { data: any }) => {
               pointStyle: "circle",
               usePointStyle: true,
               padding: 30,
-              font: { weight: "800" },
+              font: { weight: "800", family: "inter" },
               color: "#000000",
             },
           },
