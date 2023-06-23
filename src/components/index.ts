@@ -8,6 +8,7 @@ import LineChartCard from "./LineChartCard";
 import Navbar from "./Navbar";
 import PieChart from "./PieChart";
 import PieChartCard from "./PieChartCard";
+import ScheduleCard from "./ScheduleCard";
 import Searchbar from "./Searchbar";
 import Sidebar from "./Sidebar";
 import SignInForm from "./SignInForm";
@@ -30,4 +31,5 @@ export {
   LineChart,
   LineChartCard,
   PieChart,
+  ScheduleCard,
 };

@@ -1,4 +1,10 @@
-import { Card, LineChartCard, Navbar, PieChartCard } from "@/components";
+import {
+  Card,
+  LineChartCard,
+  Navbar,
+  PieChartCard,
+  ScheduleCard,
+} from "@/components";
 import { lineGraphData, cardData } from "../../../data";
 
 const DashboardPage = () => {
@@ -13,6 +19,7 @@ const DashboardPage = () => {
       <LineChartCard data={lineGraphData} />
       <div className="grid grid-cols-2 gap-8">
         <PieChartCard />
+        <ScheduleCard />
       </div>
     </div>
   );
