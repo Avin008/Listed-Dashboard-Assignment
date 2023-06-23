@@ -3,6 +3,7 @@ import Card from "./Card";
 import ContactMenu from "./ContactOptions";
 import CreateAccountLink from "./CreateAccountLink";
 import FormHeading from "./FormHeading";
+import LineChart from "./LineChart";
 import Navbar from "./Navbar";
 import Searchbar from "./Searchbar";
 import Sidebar from "./Sidebar";
@@ -22,4 +23,5 @@ export {
   Navbar,
   Searchbar,
   Card,
+  LineChart,
 };
