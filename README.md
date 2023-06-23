@@ -10,13 +10,11 @@ https://user-images.githubusercontent.com/32406268/232518539-afa02cd8-5c2d-4eab-
     <li>Google Sign In</li>
     <li>Sign Out</li>
     <li>Responsive</li>
-   
   </ul>
 
   <h2>Technologies Used</h2>
   <ul>
-    <li><strong>Backend:</strong> Node.js, TypeScript, Express.js, MongoDB</li>
-    <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind, Zustand, and React Query</li>
+    <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind, and Chart.js</li>
     <li><strong>Deployment:</strong> Vercel</li>
   </ul>
 
@@ -27,7 +25,10 @@ https://user-images.githubusercontent.com/32406268/232518539-afa02cd8-5c2d-4eab-
     <li>Create a new file named <code>.env.local</code> in the root directory of the project</li>
     <li>Add the following environment variables to the <code>.env.local</code> file:
       <ul>
-        <li><code>NEXT_PUBLIC_URL=https://expressjs-mongoose-production-fb7d.up.railway.app</code> - URL OF THE BACKEND SERVER</li>
+        <li><code>NEXT_PUBLIC_NEXT_AUTH_SECRET=secret_code</code></li>
+        <li><code>NEXT_PUBLIC_NEXT_AUTH_URL=homepage_url</code></li>
+        <li><code>NEXT_PUBLIC_GOOGLE_CLIENT_ID=google_code</code></li>
+        <li><code>NEXT_PUBLIC_GOOGLE_CLIENT_SECRET=secret_code</code></li>
       </ul>
     </li>
     <li>Start the server: <code>npm run dev</code></li>
@@ -36,13 +37,7 @@ https://user-images.githubusercontent.com/32406268/232518539-afa02cd8-5c2d-4eab-
 
   <h2>Usage</h2>
   <ul>
-    <li>Sign up for a new account or log in to an existing account</li>
-    <li>Follow users to see their posts in your feeds</li>
-    <li>Create a post and share it with other users</li>
-    <li>Like and comment on posts from other users</li>
-    <li>Search for other users</li>
-    <li>Edit your profile details</li>
-    <li>navigate to explore page to see other users posts</li>
+    <li>Sign In with your Google Account by clicking on sign in with google button</li>
   </ul>
 
   <h2>Contributing</h2>
