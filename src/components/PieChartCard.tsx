@@ -1,7 +1,7 @@
-import { lineGraphData } from "../../data";
 import PieChart from "./PieChart";
+import { PieChartType } from "../../types";
 
-const PieChartCard = () => {
+const PieChartCard = ({ data }: { data: PieChartType[] }) => {
   return (
     <div className="h-[256px] rounded-2xl bg-white px-[40px] py-[30px]">
       <div className="flex justify-between">
@@ -14,7 +14,7 @@ const PieChartCard = () => {
         </select>
       </div>
       <div className="">
-        <PieChart data={lineGraphData} />
+        <PieChart data={data} />
       </div>
     </div>
   );

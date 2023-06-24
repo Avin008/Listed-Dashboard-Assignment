@@ -1,6 +1,7 @@
 import LineChart from "./LineChart";
+import { LineGraphDataPropsType } from "../../types";
 
-const LineChartCard = ({ data }: { data: any }) => {
+const LineChartCard = ({ data }: { data: LineGraphDataPropsType[] }) => {
   return (
     <div className="h-fit rounded-2xl bg-white px-[40px] py-[30px]">
       <div className="">

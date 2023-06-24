@@ -1,4 +1,4 @@
-const CreateAccountLink = () => {
+const CreateAccountButton = () => {
   return (
     <div className="flex justify-center text-[16px]">
       <span className="font-mono text-[#858585]">
@@ -9,4 +9,4 @@ const CreateAccountLink = () => {
   );
 };
 
-export default CreateAccountLink;
+export default CreateAccountButton;
