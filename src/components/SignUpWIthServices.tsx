@@ -1,4 +1,4 @@
-import SignInWithServicesButton from "./SignInWithServicesButton";
+import SignInWithServicesButton from "./SignInWithProviderButton";
 
 const SignInWithServices = () => {
   return (

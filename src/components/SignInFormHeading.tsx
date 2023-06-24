@@ -1,4 +1,4 @@
-const FormHeading = () => {
+const SignInFormHeading = () => {
   return (
     <div>
       <h2 className="font-sans text-[36px] font-bold">Sign In</h2>
@@ -7,4 +7,4 @@ const FormHeading = () => {
   );
 };
 
-export default FormHeading;
+export default SignInFormHeading;

@@ -13,7 +13,7 @@ const applyCardBg = (id: number) => {
   }
 };
 
-const Card = ({ cardData }: { cardData: CardProps }) => {
+const StatsCard = ({ cardData }: { cardData: CardProps }) => {
   return (
     <div className={`h-[120px] w-[221px] rounded-2xl ${applyCardBg}`}>
       <div className="flex justify-end">
@@ -33,4 +33,4 @@ const Card = ({ cardData }: { cardData: CardProps }) => {
   );
 };
 
-export default Card;
+export default StatsCard;

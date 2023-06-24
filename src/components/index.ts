@@ -1,9 +1,9 @@
 import AuthProvider from "./AuthProvider";
-import Brand from "./Brand";
-import Card from "./Card";
-import ContactMenu from "./ContactOptions";
-import CreateAccountLink from "./CreateAccountLink";
-import FormHeading from "./FormHeading";
+import Brand from "./BrandText";
+import Card from "./StatsCard";
+import ContactMenu from "./ContactMenu";
+import CreateAccountLink from "./CreateAccountButton";
+import FormHeading from "./SignInFormHeading";
 import LineChart from "./LineChart";
 import LineChartCard from "./LineChartCard";
 import Navbar from "./Navbar";
@@ -13,7 +13,7 @@ import ScheduleCard from "./ScheduleCard";
 import Searchbar from "./Searchbar";
 import Sidebar from "./Sidebar";
 import SignInForm from "./SignInForm";
-import SignInWithServicesButton from "./SignInWithServicesButton";
+import SignInWithServicesButton from "./SignInWithProviderButton";
 import SignInWithServices from "./SignUpWIthServices";
 
 export {
