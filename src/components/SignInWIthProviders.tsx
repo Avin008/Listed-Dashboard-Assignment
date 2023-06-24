@@ -1,6 +1,6 @@
 import SignInWithServicesButton from "./SignInWithProviderButton";
 
-const SignInWithServices = () => {
+const SignInWithProviders = () => {
   return (
     <div className="flex justify-around">
       <SignInWithServicesButton icon="/google.png" text="Sign in with Google" />
@@ -9,4 +9,4 @@ const SignInWithServices = () => {
   );
 };
 
-export default SignInWithServices;
+export default SignInWithProviders;
