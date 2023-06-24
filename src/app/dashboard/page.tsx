@@ -13,11 +13,13 @@ import {
   LineGraphDataPropsType,
   scheduleCardPropsType,
 } from "../../../types";
-import { lineGraphData } from "../../../data";
 
 const DashboardPage = () => {
   const [StatsCardData, setStatsData] = useState<CardPropsType[]>([]);
   const [scheduleData, setScheduleData] = useState<scheduleCardPropsType[]>([]);
+  const [lineChartData, setLineChartData] = useState<LineGraphDataPropsType[]>(
+    []
+  );
 
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/stats?select=*`, {
@@ -41,6 +43,20 @@ const DashboardPage = () => {
       .then((data) => {
         setScheduleData(data);
       });
+
+    fetch(
+      `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/line-chart?select=*`,
+      {
+        headers: {
+          "Context-Type": "application/json",
+          apiKey: `${process.env.NEXT_PUBLIC_SUPABASE_API_KEY}`,
+        },
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setLineChartData(data);
+      });
   }, []);
 
   return (
@@ -51,7 +67,7 @@ const DashboardPage = () => {
           <StatsCard key={cardData.id} cardData={cardData} />
         ))}
       </div>
-      <LineChartCard data={lineGraphData} />
+      {lineChartData.length && <LineChartCard data={lineChartData} />}
       <div className="grid gap-8 sm:grid-cols-1 xl:grid-cols-2">
         <PieChartCard />
         <ScheduleCard cardData={scheduleData} />
