@@ -1,8 +1,12 @@
+
+
+https://github.com/Avin008/Listed-Dashboard-Assignment/assets/32406268/ab40c349-fa32-499e-8465-75909c426f6e
+
 <body>
   <h1>BOARD - FRONTEND INTERN ASSIGNMENT</h1>
-  
-  <h2>Demo</h2>
 
+  <h2>Live Link: <a href="https://listed-dashboard-assignment-one.vercel.app">https://listed-dashboard-assignment-one.vercel.app/</a></h2>
+  
   <h2>Technologies Used</h2>
   <ul>
     <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind, and Chart.js</li>
