@@ -13,9 +13,16 @@ const applyCardBg = (id: number) => {
   }
 };
 
-const StatsCard = ({ cardData }: { cardData: CardProps }) => {
+const Card = ({ cardData }: { cardData: CardProps }) => {
   return (
-    <div className={`h-[120px] w-[221px] rounded-2xl ${applyCardBg}`}>
+    <div
+      className={`h-[120px] w-[221px] rounded-2xl p-3 
+    ${cardData.id === 1 && "bg-[#DDEFE0]"}
+    ${cardData.id === 2 && "bg-[#F4ECDD]"}
+    ${cardData.id === 3 && "bg-[#EFDADA]"}
+    ${cardData.id === 4 && "bg-[#DEE0EF]"}
+    `}
+    >
       <div className="flex justify-end">
         <Image
           className="object-contain"
@@ -33,4 +40,4 @@ const StatsCard = ({ cardData }: { cardData: CardProps }) => {
   );
 };
 
-export default StatsCard;
+export default Card;

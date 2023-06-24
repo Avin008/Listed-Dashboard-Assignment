@@ -1,10 +1,10 @@
-import SignInWithServicesButton from "./SignInWithProviderButton";
+import SignInWithProviderButton from "./SignInWithProviderButton";
 
 const SignInWithProviders = () => {
   return (
     <div className="flex justify-around">
-      <SignInWithServicesButton icon="/google.png" text="Sign in with Google" />
-      <SignInWithServicesButton icon="/apple.png" text="Sign in with Apple" />
+      <SignInWithProviderButton icon="/google.png" text="Sign in with Google" />
+      <SignInWithProviderButton icon="/apple.png" text="Sign in with Apple" />
     </div>
   );
 };
