@@ -3,16 +3,17 @@
 import { useState } from "react";
 import { Chart as ChartJS, CategoryScale } from "chart.js/auto";
 import { Pie } from "react-chartjs-2";
+import { PieChartType } from "../../types";
 
 ChartJS.register(CategoryScale);
 
-const PieChart = ({ data }: { data: any }) => {
+const PieChart = ({ data }: { data: PieChartType[] }) => {
   const [chartData, setChartData] = useState({
-    labels: ["Basic Tees", "Custom Short Pants", "Super Hoodies"],
+    labels: data.map((x) => x.label),
     datasets: [
       {
         label: "Guest",
-        data: [10, 30, 60],
+        data: data.map((x) => x.data),
         backgroundColor: ["#EE8484", "#F6DC7D", "#98D89E"],
         borderWidth: 0,
       },

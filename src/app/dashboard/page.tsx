@@ -8,10 +8,12 @@ import {
   ScheduleCard,
 } from "@/components";
 import { useEffect, useState } from "react";
+
 import {
   CardPropsType,
   LineGraphDataPropsType,
   scheduleCardPropsType,
+  PieChartType,
 } from "../../../types";
 
 const DashboardPage = () => {
@@ -20,6 +22,7 @@ const DashboardPage = () => {
   const [lineChartData, setLineChartData] = useState<LineGraphDataPropsType[]>(
     []
   );
+  const [pieChartData, setPieChartData] = useState<PieChartType[]>([]);
 
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/stats?select=*`, {
@@ -57,6 +60,20 @@ const DashboardPage = () => {
       .then((data) => {
         setLineChartData(data);
       });
+
+    fetch(
+      `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/pie-chart?select=*`,
+      {
+        headers: {
+          "Context-Type": "application/json",
+          apiKey: `${process.env.NEXT_PUBLIC_SUPABASE_API_KEY}`,
+        },
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setPieChartData(data);
+      });
   }, []);
 
   return (
@@ -69,7 +86,7 @@ const DashboardPage = () => {
       </div>
       {lineChartData.length && <LineChartCard data={lineChartData} />}
       <div className="grid gap-8 sm:grid-cols-1 xl:grid-cols-2">
-        <PieChartCard />
+        {pieChartData.length && <PieChartCard data={pieChartData} />}
         <ScheduleCard cardData={scheduleData} />
       </div>
     </div>

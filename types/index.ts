@@ -18,3 +18,9 @@ export type scheduleCardPropsType = {
   time: string;
   place: string;
 };
+
+export type PieChartType = {
+  id: string;
+  label: string;
+  data: number;
+};
