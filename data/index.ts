@@ -1,4 +1,10 @@
-export const cardData = [
+import {
+  CardPropsType,
+  LineGraphDataPropsType,
+  scheduleCardPropsType,
+} from "../types";
+
+export const StatsCardData: CardPropsType[] = [
   { id: 1, icon: "/camera.png", title: "Total Revenues", data: "$2,129,430" },
   {
     id: 2,
@@ -10,14 +16,14 @@ export const cardData = [
   { id: 4, icon: "/users.png", title: "Total Users", data: "892" },
 ];
 
-export const lineGraphData = [
+export const lineGraphData: LineGraphDataPropsType[] = [
   { id: 1, year: "Week 1", userGained: 100, userLost: 200 },
   { id: 2, year: "Week 2", userGained: 400, userLost: 320 },
   { id: 3, year: "Week 3", userGained: 250, userLost: 460 },
   { id: 4, year: "Week 4", userGained: 420, userLost: 480 },
 ];
 
-export const scheduleData = [
+export const scheduleCardData: scheduleCardPropsType[] = [
   {
     id: 1,
     title: "Meeting with suppliers from Kuta Bali",

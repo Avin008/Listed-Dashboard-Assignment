@@ -1,8 +1,6 @@
-const ScheduleCard = ({
-  data,
-}: {
-  data: { id: number; title: string; time: string; place: string }[];
-}) => {
+import { scheduleCardPropsType } from "../../types";
+
+const ScheduleCard = ({ cardData }: { cardData: scheduleCardPropsType[] }) => {
   return (
     <div className="h-[259px] space-y-4 rounded-2xl bg-white px-[40px] py-[30px]">
       <div className="flex justify-between">
@@ -12,18 +10,18 @@ const ScheduleCard = ({
         </button>
       </div>
       <div className="flex flex-col gap-5">
-        {data.map((x) => (
+        {cardData.map((scheduleData) => (
           <div
-            key={x.id}
+            key={scheduleData.id}
             className={`border-l-4 ${
-              x.id === 1 ? "border-[#9BDD7C]" : "border-[#6972C3]"
+              scheduleData.id === 1 ? "border-[#9BDD7C]" : "border-[#6972C3]"
             }  px-3`}
           >
             <h1 className="font-mono text-[14px] font-bold text-[#666666]">
-              {x.title}
+              {scheduleData.title}
             </h1>
-            <p className="text-[12px] text-[#999999]">{x.time}</p>
-            <p className="text-[12px] text-[#999999]">{x.place}</p>
+            <p className="text-[12px] text-[#999999]">{scheduleData.time}</p>
+            <p className="text-[12px] text-[#999999]">{scheduleData.place}</p>
           </div>
         ))}
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { CardProps } from "../../types";
+import { CardPropsType } from "../../types";
 
-const Card = ({ cardData }: { cardData: CardProps }) => {
+const Card = ({ cardData }: { cardData: CardPropsType }) => {
   return (
     <div
       className={`h-[120px] w-[221px] rounded-2xl p-3 
