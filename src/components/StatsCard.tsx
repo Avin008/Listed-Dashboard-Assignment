@@ -1,18 +1,6 @@
 import Image from "next/image";
 import { CardProps } from "../../types";
 
-const applyCardBg = (id: number) => {
-  if (id === 1) {
-    return "bg-[#DDEFE0]";
-  } else if (id === 2) {
-    return "bg-[#F4ECDD]";
-  } else if (id === 3) {
-    return "bg-[#EFDADA]";
-  } else {
-    return "bg-[#DEE0EF]";
-  }
-};
-
 const Card = ({ cardData }: { cardData: CardProps }) => {
   return (
     <div
