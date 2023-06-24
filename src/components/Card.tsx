@@ -1,31 +1,33 @@
 import Image from "next/image";
+import { CardProps } from "../../types";
 
-const Card = ({
-  data,
-}: {
-  data: { id: number; title: string; icon: string; data: string };
-}) => {
+const applyCardBg = (id: number) => {
+  if (id === 1) {
+    return "bg-[#DDEFE0]";
+  } else if (id === 2) {
+    return "bg-[#F4ECDD]";
+  } else if (id === 3) {
+    return "bg-[#EFDADA]";
+  } else {
+    return "bg-[#DEE0EF]";
+  }
+};
+
+const Card = ({ cardData }: { cardData: CardProps }) => {
   return (
-    <div
-      className={`h-[120px] w-[221px] rounded-2xl ${
-        data.id === 1 && "bg-[#DDEFE0]"
-      } ${data.id === 2 && "bg-[#F4ECDD]"}
-      ${data.id === 3 && "bg-[#EFDADA]"}
-      ${data.id === 4 && "bg-[#DEE0EF]"}
-      p-3`}
-    >
+    <div className={`h-[120px] w-[221px] rounded-2xl ${applyCardBg}`}>
       <div className="flex justify-end">
         <Image
           className="object-contain"
-          src={data.icon}
-          alt={data.title}
+          src={cardData.icon}
+          alt={cardData.title}
           width={20}
           height={20}
         />
       </div>
       <div className="p-2">
-        <p className="font-mono text-[14px]">{data.title}</p>
-        <h4 className="font-serif text-[24px] font-bold">{data.data}</h4>
+        <p className="font-mono text-[14px]">{cardData.title}</p>
+        <h4 className="font-serif text-[24px] font-bold">{cardData.data}</h4>
       </div>
     </div>
   );

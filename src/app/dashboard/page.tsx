@@ -13,7 +13,7 @@ const DashboardPage = () => {
       <Navbar />
       <div className="mt-[40px] grid gap-6 x_sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {cardData.map((x) => (
-          <Card key={x.id} data={x} />
+          <Card key={x.id} cardData={x} />
         ))}
       </div>
       <LineChartCard data={lineGraphData} />
