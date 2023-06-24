@@ -79,17 +79,17 @@ const DashboardPage = () => {
   return (
     <div className="mx-auto mt-[25px] w-[95%] space-y-5">
       <Navbar />
-      {StatsCardData.length && (
+      {StatsCardData.length > 0 && (
         <div className="mt-[40px] grid gap-6 x_sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {StatsCardData?.map((cardData) => (
             <StatsCard key={cardData.id} cardData={cardData} />
           ))}
         </div>
       )}
-      {lineChartData.length && <LineChartCard data={lineChartData} />}
+      {lineChartData.length > 0 && <LineChartCard data={lineChartData} />}
       <div className="grid gap-8 sm:grid-cols-1 xl:grid-cols-2">
-        {pieChartData.length && <PieChartCard data={pieChartData} />}
-        {scheduleData.length && <ScheduleCard cardData={scheduleData} />}
+        {pieChartData.length > 0 && <PieChartCard data={pieChartData} />}
+        {scheduleData.length > 0 && <ScheduleCard cardData={scheduleData} />}
       </div>
     </div>
   );
