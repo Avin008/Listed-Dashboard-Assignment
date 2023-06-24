@@ -9,7 +9,7 @@ const Searchbar = () => {
         placeholder="Search..."
       />
       <div className="flex items-center justify-center">
-        <Image src="/search.png" alt="" width={12} height={12} />
+        <Image src="/search-icon.png" alt="" width={12} height={12} />
       </div>
     </div>
   );
